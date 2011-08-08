@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf8">
+  <title><%= "#{SITE_TITLE}" %></title>
+  <link href="/reset.css" rel="stylesheet">
+  <link href="/style.css" rel="stylesheet">
+  <link href="/rss.xml" rel="alternate" type="application/rss+xml">  
+</head>
+<body>
+ <div id="container">
+  <header>
+    <hgroup>
+      <h1><a href="/"><%= SITE_TITLE %></a></h1>
+      <h2><%= SITE_DESCRIPTION %></h2>
+    </hgroup>
+  </header>
+
+  <div id="main">
+    <%= yield %>
+  </div>
+
+  <footer>
+    <p><small></small></p>
+  </footer>
+ </div>
+</body>
+</html>

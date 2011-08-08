@@ -1,0 +1,10 @@
+<section id="add">
+  <form action="/" method="post">
+    <input type="text" name="url" placeholder="Your link&hellip;"></textarea>
+    <input type="submit" value="short it!">
+  </form>
+</section>
+
+<% if @shorturl %>
+ <p><a href="/<%= @shorturl %>">Your link: <%= @shorturl %></a></p>
+<% end %>
