@@ -3,10 +3,10 @@ require 'sinatra'
 require 'datamapper'
 require 'builder'
 
-SITE_TITLE = "gnomurl"
+SITE_TITLE = "URL Shortener"
 SITE_DESCRIPTION = ""
 
-DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/gnomurl.db")
+DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/url_short.db")
 class Link
   include DataMapper::Resource
   property :id, Serial
